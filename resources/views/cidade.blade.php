@@ -8,6 +8,7 @@
 </head>
 <body>
     
+    <h1>Lista de Cidades</h1>
 @foreach($listaCidades as $cidade)
     <h2>{{$cidade->nome}}</h2>
     @endforeach
