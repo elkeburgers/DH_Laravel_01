@@ -25,4 +25,5 @@ Route::get('/', function () {
 // sempre testar antes no terminal se o servidor estah conectado, exceto se forem testes no mesmo arquivo: php artisan serve
 Route::get('/home', 'HomeController@viewHome');
 
+Route::get('/cidade', 'CidadeController@viewCidade');
 
