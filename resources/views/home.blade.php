@@ -13,6 +13,8 @@
     @foreach($listaUsuarios as $usuario)
     <!-- pega o paramento e seleciona a coluna da tabela que quero imprimir os dados -->
     <h2>{{$usuario->nome}}</h2>
+    <!-- na view nao traz o nome da variavel, mas da associacao feita no HomeController -->
     @endforeach
+    
 </body>
 </html>

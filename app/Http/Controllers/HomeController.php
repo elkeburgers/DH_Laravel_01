@@ -17,6 +17,9 @@ class HomeController extends Controller
        //return view('home');
        $usuario = new Usuario();
        $listaUsuarios = $usuario->all();
+       // as duas linhas acima podem ser substituidas por:
+       //$listaUsuarios = Usuario::all();
+
     //    dd($listaUsuarios);
        // dd substitui o var_dump e retorna a informacao mais limpa, e ele dá exit em seguida
 
