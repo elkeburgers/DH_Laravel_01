@@ -19,7 +19,7 @@ class CriandoProdutosTabela extends Migration
         Schema::create('produtos', function(Blueprint $table){
             // agora as colunas, usando a variavel acima, o atributo e o nome da coluna:
             $table->bigIncrements('id');
-            // para definir a quantidade de caracteres, usa virgula; se nao definir, cria com padrao perto de 700 caracteres:
+            // para definir a quantidade de caracteres, usa virgula; se nao definir, cria com padrao perto de 700 caracteres (767):
             $table->string('nome', 200);
         });
     }
@@ -35,3 +35,7 @@ class CriandoProdutosTabela extends Migration
         Schema::dropIfExists('produtos');
     }
 }
+
+// precisa  carregar agora via terminal usando 
+// php artisan migrate 
+// para carregar a criacao da tabela e das colunas no banco de dados que jah existe (precisa ser criado no SQL antes das tabelas pelo Laravel, ele soh nao faz isso)
