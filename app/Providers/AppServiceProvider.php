@@ -31,3 +31,5 @@ class AppServiceProvider extends ServiceProvider
         // Schema::defaultStringLength(191);
     }
 }
+
+//para finalizar precisa entrar no MySQL e dropar a tabela migrations
